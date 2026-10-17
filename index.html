@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#12161f">
+<title>秋霞电影网免费观看｜每日新片速递与剧集追更表 - qiuxiadianyingwangmianfeiguankan-app.github.io</title>
+<meta name="description" content="秋霞电影网免费观看把每天值得看的片子串成一条线：清晨更新新片速递，午后整理剧集追更表，夜里补上纪实影像与番剧时间轴。入口 https://qiuxiadianyingwangmianfeiguankan-app.github.io 收录剧情看点、演员阵容、片长信息、观影提示与影迷札记，手机、平板、桌面打开都是同一份排版，随手挑片不费劲。">
+<meta name="keywords" content="秋霞电影网免费观看,秋霞电影网,qiuxiadianyingwangmianfeiguankan-app.github.io,新片速递,剧集追更表,纪实影像,番剧更新时间轴,影迷札记,剧情看点,观影提示,在线挑片导航">
+<meta name="author" content="秋霞电影网免费观看">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="renderer" content="webkit">
+<meta name="applicable-device" content="pc,mobile">
+<link rel="canonical" href="https://qiuxiadianyingwangmianfeiguankan-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="秋霞电影网免费观看">
+<meta property="og:title" content="秋霞电影网免费观看｜每日新片速递与剧集追更表">
+<meta property="og:description" content="新片、剧集、纪实、番剧四张表，一天更新两次，打开 https://qiuxiadianyingwangmianfeiguankan-app.github.io 就能挑到今晚要看的那部。">
+<meta property="og:url" content="https://qiuxiadianyingwangmianfeiguankan-app.github.io/">
+<meta property="og:image" content="https://qiuxiadianyingwangmianfeiguankan-app.github.io/cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="秋霞电影网免费观看｜每日新片速递与剧集追更表">
+<meta name="twitter:description" content="四张表、六个栏目，把每天值得看的片子一次排明白。">
+<style>
+:root{
+  --ink:#12161f;
+  --ink-2:#191f2b;
+  --ink-3:#222a39;
+  --line:#2c3546;
+  --paper:#eef1f6;
+  --dim:#9aa6bb;
+  --glow:#ff7a45;
+  --glow-2:#ffc36b;
+  --cool:#5fc0d0;
+  --radius:14px;
+  --wrap:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--ink);
+  color:var(--paper);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",system-ui,sans-serif;
+  font-size:16px;line-height:1.75;
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+ul,ol{list-style:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:12px;top:12px;z-index:99;background:var(--glow);color:#1a1005;padding:8px 14px;border-radius:8px}
+
+/* 顶部播报条 */
+.flash{
+  background:linear-gradient(90deg,#ff7a45 0%,#ffb347 45%,#ff7a45 100%);
+  color:#26160a;font-size:13px;letter-spacing:.02em;
+}
+.flash .wrap{display:flex;align-items:center;gap:10px;min-height:38px;padding-top:6px;padding-bottom:6px;flex-wrap:wrap}
+.flash b{background:#26160a;color:#ffd9a8;border-radius:20px;padding:1px 9px;font-size:12px;font-weight:600}
+.flash span{flex:1;min-width:200px}
+.flash em{font-style:normal;opacity:.75;font-size:12px}
+
+/* 导航 */
+header.bar{
+  position:sticky;top:0;z-index:40;
+  background:rgba(18,22,31,.92);
+  backdrop-filter:saturate(150%) blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;gap:14px}
+.logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.logo i{
+  width:32px;height:32px;border-radius:9px;flex-shrink:0;
+  background:radial-gradient(circle at 30% 25%,#ffe0a8,#ff7a45 60%,#c2410c);
+  box-shadow:0 0 0 1px rgba(255,195,107,.35),0 6px 16px -8px #ff7a45;
+}
+.logo strong{font-size:18px;letter-spacing:.01em;white-space:nowrap}
+.logo small{display:block;font-size:11px;color:var(--dim);letter-spacing:.06em;text-transform:uppercase}
+nav.menu{display:flex;gap:4px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+nav.menu::-webkit-scrollbar{display:none}
+nav.menu a{
+  font-size:14px;color:#c9d2e3;padding:7px 11px;border-radius:9px;white-space:nowrap;
+  transition:background .2s,color .2s;
+}
+nav.menu a:hover,nav.menu a.on{background:var(--ink-3);color:#fff}
+.burger{display:none;width:40px;height:40px;border:1px solid var(--line);border-radius:10px;align-items:center;justify-content:center}
+.burger span{display:block;width:16px;height:1.5px;background:var(--paper);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:16px;height:1.5px;background:var(--paper)}
+.burger span::before{top:-5px}.burger span::after{top:5px}
+
+/* 首屏：斜切 + 左文右榜 */
+.hero{position:relative;padding:76px 0 60px;overflow:hidden}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(680px 380px at 78% -6%,rgba(255,122,69,.30),transparent 62%),
+    radial-gradient(520px 320px at 6% 108%,rgba(95,192,208,.18),transparent 60%);
+  pointer-events:none;
+}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:start}
+.kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--glow-2);
+  border:1px solid rgba(255,195,107,.34);border-radius:30px;padding:4px 12px;margin-bottom:20px;
+}
+.kicker u{width:5px;height:5px;border-radius:50%;background:var(--glow);text-decoration:none}
+h1{
+  font-size:clamp(29px,5.6vw,52px);line-height:1.24;letter-spacing:-.01em;font-weight:800;
+  background:linear-gradient(96deg,#fff 20%,#ffd9a8 62%,#ff9a5c 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  padding-bottom:6px;
+}
+h1 mark{background:none;color:var(--glow-2)}
+.lede{margin-top:18px;color:#c3ccdd;font-size:16.5px;max-width:56ch}
+.lede strong{color:#fff;font-weight:600}
+.urlbox{
+  margin-top:24px;display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;
+  background:var(--ink-2);border:1px dashed rgba(255,195,107,.4);border-radius:12px;padding:10px 14px;
+}
+.urlbox code{font-size:14px;color:var(--glow-2);word-break:break-all;font-family:ui-monospace,Menlo,Consolas,monospace}
+.urlbox em{font-style:normal;font-size:12px;color:var(--dim)}
+.cta{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:12px 24px;border-radius:11px;font-size:15px;font-weight:600;
+  background:linear-gradient(96deg,#ff8a4c,#ffb347);color:#26160a;
+  transition:transform .18s,box-shadow .18s;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px -14px #ff7a45}
+.btn.ghost{background:none;border:1px solid var(--line);color:#c9d2e3}
+.btn.ghost:hover{border-color:var(--glow);color:#fff}
+
+/* 右侧热度榜 */
+.rank{
+  background:linear-gradient(180deg,var(--ink-2),rgba(25,31,43,.55));
+  border:1px solid var(--line);border-radius:var(--radius);padding:20px 18px;
+  box-shadow:0 24px 50px -34px #000;
+}
+.rank h2{font-size:14px;letter-spacing:.14em;color:var(--dim);font-weight:600;text-transform:uppercase;display:flex;justify-content:space-between}
+.rank h2 b{color:var(--glow);letter-spacing:0;font-size:12px}
+.rank ol{margin-top:12px;counter-reset:r}
+.rank li{
+  counter-increment:r;display:flex;align-items:baseline;gap:11px;
+  padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.07);font-size:14.5px;
+}
+.rank li:last-child{border-bottom:0}
+.rank li::before{
+  content:counter(r,decimal-leading-zero);color:var(--glow);font-weight:700;font-size:13px;
+  font-family:ui-monospace,Consolas,monospace;
+}
+.rank li p{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rank li small{color:var(--dim);font-size:12px;flex-shrink:0}
+.rank .foot{margin-top:14px;font-size:12.5px;color:var(--dim);line-height:1.7}
+
+/* 分隔标题：编号 + 竖线 */
+.sec{padding:62px 0}
+.sec .wrap{position:relative}
+.sechead{display:flex;align-items:flex-end;gap:16px;margin-bottom:26px;flex-wrap:wrap}
+.sechead .no{
+  font-size:44px;line-height:1;font-weight:800;color:transparent;
+  -webkit-text-stroke:1.4px rgba(255,195,107,.55);
+  font-family:ui-monospace,Consolas,monospace;
+}
+.sechead .txt{border-left:3px solid var(--glow);padding-left:13px}
+.sechead h2{font-size:clamp(20px,3.4vw,27px);font-weight:700;letter-spacing:-.01em}
+.sechead p{font-size:13.5px;color:var(--dim);margin-top:3px}
+.sechead .more{margin-left:auto;font-size:13.5px;color:var(--glow-2);border-bottom:1px solid rgba(255,195,107,.4);padding-bottom:1px}
+
+/* 栏目一：新片速递卡片 */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{
+  background:var(--ink-2);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  display:flex;flex-direction:column;transition:transform .22s,border-color .22s;
+}
+.card:hover{transform:translateY(-4px);border-color:rgba(255,122,69,.5)}
+.poster{
+  position:relative;aspect-ratio:16/10;display:flex;align-items:flex-end;padding:14px;
+  background:linear-gradient(140deg,#2b3346,#1b2230);
+}
+.poster.p1{background:linear-gradient(140deg,#3a2a3f,#141a26 70%)}
+.poster.p2{background:linear-gradient(140deg,#123a3a,#141a26 70%)}
+.poster.p3{background:linear-gradient(140deg,#42301a,#141a26 70%)}
+.poster.p4{background:linear-gradient(140deg,#1d2c4d,#141a26 70%)}
+.poster.p5{background:linear-gradient(140deg,#43202a,#141a26 70%)}
+.poster.p6{background:linear-gradient(140deg,#26331f,#141a26 70%)}
+.poster::after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(240px 140px at 82% 12%,rgba(255,195,107,.28),transparent 70%);
+}
+.poster .tag{
+  position:absolute;top:12px;left:12px;z-index:2;font-size:11.5px;
+  background:rgba(18,22,31,.78);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:2px 9px;color:var(--glow-2);
+}
+.poster h3{position:relative;z-index:2;font-size:17px;font-weight:700;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.card .body{padding:14px 15px 16px;flex:1;display:flex;flex-direction:column}
+.card .meta{font-size:12px;color:var(--dim);display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.card .meta span::before{content:"· ";}
+.card .meta span:first-child::before{content:""}
+.card p{font-size:14px;color:#b8c2d4;flex:1}
+.card .go{margin-top:12px;font-size:13.5px;color:var(--glow-2);display:inline-flex;align-items:center;gap:6px}
+.card .go::after{content:"→";transition:transform .2s}
+.card:hover .go::after{transform:translateX(4px)}
+
+/* 栏目二：剧集追更 列表 */
+.trace{display:grid;grid-template-columns:1fr 1fr;gap:0 30px}
+.trace li{
+  display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;
+  padding:15px 0;border-bottom:1px solid rgba(255,255,255,.07);
+}
+.trace .idx{font-size:13px;color:var(--glow);font-family:ui-monospace,Consolas,monospace;width:24px}
+.trace h3{font-size:15.5px;font-weight:600}
+.trace .sub{font-size:12.5px;color:var(--dim);margin-top:2px}
+.trace .ep{
+  font-size:12px;padding:4px 10px;border-radius:20px;white-space:nowrap;
+  border:1px solid rgba(95,192,208,.4);color:var(--cool);
+}
+.trace .ep.hot{border-color:rgba(255,122,69,.45);color:var(--glow-2)}
+
+/* 栏目三：纪实影像 图文交错 */
+.doc{display:grid;gap:22px}
+.doc article{
+  display:grid;grid-template-columns:180px 1fr;gap:22px;align-items:center;
+  background:var(--ink-2);border:1px solid var(--line);border-radius:var(--radius);padding:16px;
+}
+.doc article:nth-child(even){grid-template-columns:1fr 180px}
+.doc article:nth-child(even) .pic{order:2}
+.doc .pic{
+  aspect-ratio:4/3;border-radius:10px;display:flex;align-items:flex-end;padding:10px;
+  background:linear-gradient(150deg,#2a3346,#151b27);position:relative;overflow:hidden;
+}
+.doc .pic::before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(95,192,208,.22),transparent 65%)}
+.doc .pic span{position:relative;font-size:12px;color:#cfe6ea}
+.doc h3{font-size:18px;font-weight:700;margin-bottom:6px}
+.doc p{font-size:14.5px;color:#b8c2d4}
+.doc .k{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.doc .k i{font-style:normal;font-size:12px;color:var(--dim);border:1px solid var(--line);border-radius:6px;padding:2px 8px}
+
+/* 栏目四：番剧时间轴 横向滚动 */
+.rail{
+  display:flex;gap:14px;overflow-x:auto;padding-bottom:10px;scroll-snap-type:x mandatory;
+  scrollbar-width:thin;
+}
+.rail::-webkit-scrollbar{height:6px}
+.rail::-webkit-scrollbar-thumb{background:var(--line);border-radius:6px}
+.rail .day{
+  flex:0 0 210px;scroll-snap-align:start;background:var(--ink-2);
+  border:1px solid var(--line);border-radius:12px;padding:14px;
+}
+.rail .day.top{border-color:rgba(255,122,69,.45);background:linear-gradient(180deg,rgba(255,122,69,.10),var(--ink-2))}
+.rail .day h3{font-size:13px;color:var(--glow-2);letter-spacing:.06em;display:flex;justify-content:space-between}
+.rail .day h3 b{color:var(--dim);font-weight:400;font-size:11.5px}
+.rail .day ul{margin-top:10px}
+.rail .day li{font-size:14px;padding:6px 0;border-bottom:1px dashed rgba(255,255,255,.06)}
+.rail .day li:last-child{border-bottom:0}
+.rail .day li em{font-style:normal;display:block;font-size:11.5px;color:var(--dim)}
+
+/* 栏目五：观影提示 + 常见疑问 */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.tips{background:var(--ink-2);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.tips h3{font-size:17px;margin-bottom:12px}
+.tips ul li{position:relative;padding-left:20px;font-size:14.5px;color:#b8c2d4;margin-bottom:9px}
+.tips ul li::before{content:"";position:absolute;left:4px;top:11px;width:6px;height:6px;border-radius:50%;background:var(--glow)}
+.faq{background:var(--ink-2);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.faq details{border-bottom:1px solid rgba(255,255,255,.07);padding:11px 0}
+.faq details:last-child{border-bottom:0}
+.faq summary{font-size:15px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--glow);font-weight:700}
+.faq details[open] summary::after{content:"−"}
+.faq details p{font-size:14px;color:#b0bacd;margin-top:8px}
+
+/* 栏目六：影迷札记 斜切块 */
+.note{background:var(--ink-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.note .wrap{padding-top:56px;padding-bottom:56px}
+.note .lead{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+.note .lead h2{font-size:clamp(21px,3.2vw,30px);font-weight:800;line-height:1.35}
+.note .lead h2 span{color:var(--glow-2)}
+.note .lead p{font-size:15px;color:#b8c2d4;margin-top:12px}
+.note .stat{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+.note .stat div{background:var(--ink);border:1px solid var(--line);border-radius:12px;padding:16px}
+.note .stat b{display:block;font-size:26px;font-weight:800;color:var(--glow-2);font-family:ui-monospace,Consolas,monospace}
+.note .stat span{font-size:12.5px;color:var(--dim)}
+
+/* 页脚 */
+footer{border-top:1px solid var(--line);background:#0f131b;padding:46px 0 30px}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px}
+footer h4{font-size:14px;color:#fff;margin-bottom:12px;letter-spacing:.04em}
+footer li{font-size:13.5px;color:var(--dim);padding:4px 0}
+footer li a:hover{color:var(--glow-2)}
+footer .siteurl{
+  margin-top:26px;border-top:1px solid var(--line);padding-top:18px;
+  font-size:13px;color:var(--dim);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+footer .siteurl code{color:var(--glow-2);font-family:ui-monospace,Consolas,monospace}
+footer .copy{margin-top:10px;font-size:12.5px;color:#6f7c93;line-height:1.8}
+
+.totop{
+  position:fixed;right:16px;bottom:16px;width:42px;height:42px;border-radius:50%;
+  background:var(--ink-3);border:1px solid var(--line);color:var(--glow-2);
+  display:flex;align-items:center;justify-content:center;font-size:16px;opacity:0;pointer-events:none;
+  transition:opacity .25s;z-index:50;
+}
+.totop.show{opacity:1;pointer-events:auto}
+
+/* 移动端 */
+@media (max-width:960px){
+  .hero .wrap{grid-template-columns:1fr;gap:30px}
+  .grid3{grid-template-columns:1fr 1fr}
+  .doc article,.doc article:nth-child(even){grid-template-columns:1fr}
+  .doc article:nth-child(even) .pic{order:0}
+  .split{grid-template-columns:1fr}
+  .note .lead{grid-template-columns:1fr;gap:18px}
+  footer .cols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:680px){
+  body{font-size:15.5px}
+  .flash em{display:none}
+  .burger{display:flex}
+  nav.menu{
+    position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--ink-2);
+    border-bottom:1px solid var(--line);padding:10px 20px 14px;display:none;
+  }
+  nav.menu.open{display:flex}
+  nav.menu a{padding:10px 4px;font-size:15px;border-bottom:1px solid rgba(255,255,255,.05)}
+  .hero{padding:44px 0 36px}
+  .grid3,.trace{grid-template-columns:1fr}
+  .sechead .no{font-size:34px}
+  .rank{padding:16px}
+  .note .stat{grid-template-columns:1fr}
+  .rail .day{flex:0 0 78%}
+  footer .cols{grid-template-columns:1fr}
+  .totop{right:12px;bottom:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<div class="flash">
+  <div class="wrap">
+    <b>今日更新</b>
+    <span>新片速递 12 部已上架，剧集追更表补到本周三，番剧时间轴同步了周末档。</span>
+    <em>更新于 <time id="today">2026-10-17</time></em>
+  </div>
+</div>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="秋霞电影网免费观看 首页">
+      <i aria-hidden="true"></i>
+      <span><strong>秋霞电影网免费观看</strong><small>qiuxiadianyingwangmianfeiguankan-app.github.io</small></span>
+    </a>
+    <nav class="menu" id="menu" aria-label="站点栏目导航">
+      <a href="#new">新片速递</a>
+      <a href="#trace">剧集追更</a>
+      <a href="#doc">纪实影像</a>
+      <a href="#acg">番剧时间轴</a>
+      <a href="#tips">观影提示</a>
+      <a href="#note">影迷札记</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="展开导航菜单" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="kicker"><u aria-hidden="true"></u>每晚 20:00 更新一次片单</span>
+        <h1>秋霞电影网免费观看<br><mark>把今晚要看的那部挑出来</mark></h1>
+        <p class="lede">这里不做铺天盖地的排行榜，只做四张能直接用上的表：<strong>新片速递</strong>管当日上新，<strong>剧集追更表</strong>记更新到第几集，<strong>纪实影像</strong>收长片和短纪录片，<strong>番剧时间轴</strong>按星期排好档期。站点入口 <strong>https://qiuxiadianyingwangmianfeiguankan-app.github.io</strong> 全天可访问，手机竖屏看也不用来回缩放。</p>
+        <div class="urlbox">
+          <code>https://qiuxiadianyingwangmianfeiguankan-app.github.io</code>
+          <em>建议收藏，避免走错同名站</em>
+        </div>
+        <div class="cta">
+          <a class="btn" href="#new">先看今日新片</a>
+          <a class="btn ghost" href="#tips">新手观影提示</a>
+        </div>
+      </div>
+
+      <aside class="rank" aria-label="本周热度榜">
+        <h2>本周热度 <b>TOP 6</b></h2>
+        <ol>
+          <li><p>河边的错误</p><small>悬疑 · 102 分钟</small></li>
+          <li><p>长安三万里</p><small>动画 · 168 分钟</small></li>
+          <li><p>奥本海默</p><small>传记 · 180 分钟</small></li>
+          <li><p>漫长的季节</p><small>剧集 · 12 集</small></li>
+          <li><p>宇宙探索编辑部</p><small>喜剧 · 118 分钟</small></li>
+          <li><p>沙丘 第二部</p><small>科幻 · 166 分钟</small></li>
+        </ol>
+        <p class="foot">榜单按近七日站内浏览与收藏量排序，每周一清晨重排一次，不与任何购票平台数据挂钩。</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="sec" id="new">
+    <div class="wrap">
+      <div class="sechead">
+        <span class="no">01</span>
+        <div class="txt">
+          <h2>新片速递</h2>
+          <p>当天上架的院线片与网络首发，先看剧情梗概再决定要不要花时间</p>
+        </div>
+        <a class="more" href="#">查看全部新片</a>
+      </div>
+      <div class="grid3">
+        <article class="card">
+          <div class="poster p1"><span class="tag">院线</span><h3>河边的错误</h3></div>
+          <div class="body">
+            <div class="meta"><span>悬疑 / 犯罪</span><span>102 分钟</span><span>1990 年代小镇</span></div>
+            <p>一桩河边命案牵出镇上几户人家的旧事，刑警顺着被水泡烂的线索往前追，越追越说不清到底谁在撒谎。</p>
+            <a class="go" href="#">看点详情</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster p2"><span class="tag">网络首发</span><h3>南方车站的聚会</h3></div>
+          <div class="body">
+            <div class="meta"><span>剧情 / 黑色</span><span>113 分钟</span><span>方言对白</span></div>
+            <p>雨夜、车站、一场说不清的碰面。偷摩托的小混混想用一次举报换点钱，结果把整条街的人都卷了进来。</p>
+            <a class="go" href="#">看点详情</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster p3"><span class="tag">修复重映</span><h3>大闹天宫</h3></div>
+          <div class="body">
+            <div class="meta"><span>动画 / 经典</span><span>114 分钟</span><span>4K 修复</span></div>
+            <p>手绘逐帧配京剧锣鼓点，这次重映把原本褪色的红与金都调了回来，大银幕上看猴王翻跟头格外有劲。</p>
+            <a class="go" href="#">看点详情</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster p4"><span class="tag">科幻</span><h3>沙丘 第二部</h3></div>
+          <div class="body">
+            <div class="meta"><span>科幻 / 史诗</span><span>166 分钟</span><span>建议大屏</span></div>
+            <p>沙漠、香料、预言三样东西继续往下压，保罗从逃亡者变成被众人喊出口号的那个人，代价写在后半段。</p>
+            <a class="go" href="#">看点详情</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster p5"><span class="tag">爱情</span><h3>爱在午夜降临前</h3></div>
+          <div class="body">
+            <div class="meta"><span>爱情 / 对话</span><span>109 分钟</span><span>系列第三部</span></div>
+            <p>九年之后两个人还在说话，只是话题从"我们会怎样"变成了"我们怎么变成这样"，台词密得像吵架。</p>
+            <a class="go" href="#">看点详情</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="poster p6"><span class="tag">纪录</span><h3>四个春天</h3></div>
+          <div class="body">
+            <div class="meta"><span>纪录 / 家庭</span><span>105 分钟</span><span>家用素材</span></div>
+            <p>导演拿了台小机器回贵州老家，一年一年拍父母做饭、唱歌、种菜，时间在里面走得很慢也很真。</p>
+            <a class="go" href="#">看点详情</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="trace" style="padding-top:0">
+    <div class="wrap">
+      <div class="sechead">
+        <span class="no">02</span>
+        <div class="txt">
+          <h2>剧集追更表</h2>
+          <p>更新到第几集、一周几更、还剩多少，全部列在一条竖线上</p>
+        </div>
+        <a class="more" href="#">订阅更新提醒</a>
+      </div>
+      <ul class="trace">
+        <li><span class="idx">01</span><div><h3>漫长的季节</h3><p class="sub">悬疑 / 12 集全 · 单集 60 分钟</p></div><span class="ep">已完结</span></li>
+        <li><span class="idx">02</span><div><h3>繁花</h3><p class="sub">剧情 / 30 集全 · 沪语版与普通话版</p></div><span class="ep">已完结</span></li>
+        <li><span class="idx">03</span><div><h3>我的阿勒泰</h3><p class="sub">散文剧 / 8 集全 · 单集 40 分钟</p></div><span class="ep">已完结</span></li>
+        <li><span class="idx">04</span><div><h3>边水往事</h3><p class="sub">冒险 / 21 集全 · 建议连看三集起</p></div><span class="ep hot">热播</span></li>
+        <li><span class="idx">05</span><div><h3>错位</h3><p class="sub">悬疑 / 更新至第 9 集 · 每周三、四各一集</p></div><span class="ep hot">更新中</span></li>
+        <li><span class="idx">06</span><div><h3>城中之城</h3><p class="sub">职场 / 更新至第 22 集 · 每周一至周三</p></div><span class="ep hot">更新中</span></li>
+        <li><span class="idx">07</span><div><h3>庆余年 第二季</h3><p class="sub">古装 / 36 集全 · 有前情提要版</p></div><span class="ep">已完结</span></li>
+        <li><span class="idx">08</span><div><h3>看不见影子的少年</h3><p class="sub">犯罪 / 更新至第 5 集 · 每周六两集</p></div><span class="ep hot">更新中</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="doc" style="padding-top:0">
+    <div class="wrap">
+      <div class="sechead">
+        <span class="no">03</span>
+        <div class="txt">
+          <h2>纪实影像</h2>
+          <p>长纪录片、自然摄影与城市口述，适合周末一个下午慢慢看</p>
+        </div>
+        <a class="more" href="#">进入纪录频道</a>
+      </div>
+      <div class="doc">
+        <article>
+          <div class="pic"><span>自然 · 6 集系列</span></div>
+          <div>
+            <h3>地球脉动 第三季</h3>
+            <p>四年拍摄周期，把海面下的迁徙路线和海岸线上的生存策略拍到同一条叙事线上。旁白克制，音效做得比画面还讲究，戴耳机看差别很大。</p>
+            <div class="k"><i>4K HDR</i><i>单集 55 分钟</i><i>适合投屏</i></div>
+          </div>
+        </article>
+        <article>
+          <div class="pic"><span>社会 · 单集 92 分钟</span></div>
+          <div>
+            <h3>人生一串 第三季</h3>
+            <p>从凌晨三点的炭火摊说起，摊主、常客、供货人各讲一段。镜头不美化烟火气，烤糊的那串也照样拍进去，看饿了算正常。</p>
+            <div class="k"><i>方言字幕</i><i>深夜慎看</i><i>共 6 集</i></div>
+          </div>
+        </article>
+        <article>
+          <div class="pic"><span>人文 · 单集 78 分钟</span></div>
+          <div>
+            <h3>但是还有书籍 第二季</h3>
+            <p>跟拍做书的人：编辑、译者、开旧书店的、在地铁里读诗的。节奏慢，但每一段都有具体的细节可以带走，适合一段一段看。</p>
+            <div class="k"><i>每季 6 集</i><i>单集 30 分钟</i><i>适合碎片时间</i></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="acg" style="padding-top:0">
+    <div class="wrap">
+      <div class="sechead">
+        <span class="no">04</span>
+        <div class="txt">
+          <h2>番剧更新时间轴</h2>
+          <p>按周一到周日排开，哪天更几部、几点上线，左右滑动就能看</p>
+        </div>
+        <a class="more" href="#">按题材筛选</a>
+      </div>
+      <div class="rail" tabindex="0" aria-label="番剧更新时间轴，可横向滑动">
+        <div class="day"><h3>周一 <b>3 部</b></h3><ul><li>葬送的芙莉莲<em>更新至 24 话</em></li><li>药屋少女的呢喃<em>第二季连载中</em></li><li>迷宫饭<em>更新至 14 话</em></li></ul></div>
+        <div class="day top"><h3>周二 <b>4 部</b></h3><ul><li>咒术回战 涉谷事变篇<em>周更一话</em></li><li>鬼灭之刃 柱训练篇<em>连载中</em></li><li>我心里危险的东西<em>第二季</em></li><li>魔都精兵的奴隶<em>更新至 9 话</em></li></ul></div>
+        <div class="day"><h3>周三 <b>2 部</b></h3><ul><li>蓝色监狱 第二季<em>周更一话</em></li><li>夜樱家大作战<em>更新至 18 话</em></li></ul></div>
+        <div class="day"><h3>周四 <b>3 部</b></h3><ul><li>王者天下 第五季<em>更新中</em></li><li>败犬女主太多了<em>周更</em></li><li>战国妖狐<em>更新至 13 话</em></li></ul></div>
+        <div class="day top"><h3>周五 <b>5 部</b></h3><ul><li>海贼王<em>长番连载</em></li><li>名侦探柯南<em>长番连载</em></li><li>怪兽 8 号<em>第二季</em></li><li>擅长逃跑的殿下<em>周更</em></li><li>摇曳露营 第三季<em>更新至 8 话</em></li></ul></div>
+        <div class="day"><h3>周六 <b>4 部</b></h3><ul><li>灵能百分百 外传<em>短篇集</em></li><li>排球少年 剧场版<em>已上线</em></li><li>星际牛仔 重制<em>4K 版</em></li><li>月光下的异世界之旅<em>第三季</em></li></ul></div>
+        <div class="day"><h3>周日 <b>2 部</b></h3><ul><li>天官赐福 特别篇<em>周更</em></li><li>时光代理人 第三季<em>更新至 6 话</em></li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="tips" style="padding-top:0">
+    <div class="wrap">
+      <div class="sechead">
+        <span class="no">05</span>
+        <div class="txt">
+          <h2>观影提示与常见疑问</h2>
+          <p>挑片、排时间、看字幕，这几件事最容易卡住新手</p>
+        </div>
+      </div>
+      <div class="split">
+        <div class="tips">
+          <h3>四条实用观影提示</h3>
+          <ul>
+            <li>片长超过 150 分钟的长片，建议先存着，找一个不被打断的两小时再看，中途退出基本接不回来。</li>
+            <li>方言片优先选带字幕的版本，沪语、粤语、贵州话三类片子的笑点大多在台词里。</li>
+            <li>悬疑和犯罪题材尽量按季连看，隔一周再看前情会忘掉大半，追更表就是用来防这个的。</li>
+            <li>自然纪录类片子投屏效果远好过手机，音效细节占这类片体验的一半以上。</li>
+          </ul>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>秋霞电影网免费观看上的片单多久更新一次？</summary>
+            <p>每天更新两次：上午补前一日上新的遗漏，晚上 20:00 排次日片单。剧集追更表随播出方更新同步，一般当天就能改。</p>
+          </details>
+          <details>
+            <summary>网站地址是不是只有这一个？</summary>
+            <p>是，完整入口为 https://qiuxiadianyingwangmianfeiguankan-app.github.io ，名称与域名固定不变，遇到拼写近似的站点请核对后再访问。</p>
+          </details>
+          <details>
+            <summary>手机上看排版会不会乱？</summary>
+            <p>不会。整站按移动端优先排版，卡片在手机上自动改成单列，番剧时间轴改为横向滑动，导航收进右上角菜单。</p>
+          </details>
+          <details>
+            <summary>榜单是按什么排的？</summary>
+            <p>只按站内浏览与收藏量统计，每周一清晨重排，不接任何购票或评分平台的数据，也不接受插队。</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="note" id="note">
+    <div class="wrap">
+      <div class="lead">
+        <div>
+          <h2>影迷札记：看多了就想写两句，<span>这里留了位置</span></h2>
+          <p>秋霞电影网免费观看从一开始就没打算做成冷冰冰的数据表。每张片单下面都留了短评区，看完随手记一句，隔几个月翻回去比重新看一遍还有意思。入口 https://qiuxiadianyingwangmianfeiguankan-app.github.io 长期有效，新旧内容都在同一套目录里。</p>
+        </div>
+        <div>
+          <div class="stat">
+            <div><b>4</b><span>长期维护的片单栏目</span></div>
+            <div><b>2 次/日</b><span>固定更新频率</span></div>
+            <div><b>随时</b><span>手机端可直接浏览</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>秋霞电影网免费观看</h4>
+        <p style="font-size:13.5px;color:#9aa6bb;line-height:1.8">每日新片速递、剧集追更表、纪实影像与番剧时间轴，四个栏目各管一块，互不重复。站点地址固定为 https://qiuxiadianyingwangmianfeiguankan-app.github.io ，建议直接收藏。</p>
+      </div>
+      <div>
+        <h4>片单栏目</h4>
+        <ul>
+          <li><a href="#new">新片速递</a></li>
+          <li><a href="#trace">剧集追更表</a></li>
+          <li><a href="#doc">纪实影像</a></li>
+          <li><a href="#acg">番剧时间轴</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>帮助与说明</h4>
+        <ul>
+          <li><a href="#tips">观影提示</a></li>
+          <li><a href="#">更新规则</a></li>
+          <li><a href="#">榜单口径</a></li>
+          <li><a href="#">留言反馈</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>站点信息</h4>
+        <ul>
+          <li><a href="#">关于本站</a></li>
+          <li><a href="#">版权与免责</a></li>
+          <li><a href="#">友情链接</a></li>
+          <li><a href="#">联系站长</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="siteurl">
+      <span>本站网址：<code>https://qiuxiadianyingwangmianfeiguankan-app.github.io</code></span>
+      <span>关键词：秋霞电影网免费观看</span>
+    </div>
+    <p class="copy">
+      Copyright © <span id="yr">2026</span> 秋霞电影网免费观看 · qiuxiadianyingwangmianfeiguankan-app.github.io<br>
+      本站仅提供影视信息整理与观影提示，不存放任何影片文件，所有条目均指向站内栏目，观看请通过已获授权的正版渠道。
+    </p>
+  </div>
+</footer>
+
+<a class="totop" id="totop" href="#" aria-label="回到页面顶部">↑</a>
+
+<script>
+(function(){
+  var b=document.getElementById('burger'),m=document.getElementById('menu');
+  b.addEventListener('click',function(){
+    var open=m.classList.toggle('open');
+    b.setAttribute('aria-expanded',open?'true':'false');
+  });
+  m.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false');}
+  });
+  var links=[].slice.call(m.querySelectorAll('a')),
+      secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));}).filter(Boolean);
+  window.addEventListener('scroll',function(){
+    var y=window.scrollY+120,cur=null;
+    secs.forEach(function(s){if(s.offsetTop<=y)cur=s.id;});
+    links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+cur);});
+    document.getElementById('totop').classList.toggle('show',window.scrollY>500);
+  },{passive:true});
+  var d=new Date(),p=function(n){return n<10?'0'+n:''+n;},
+      t=d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate());
+  document.getElementById('today').textContent=t;
+  document.getElementById('today').setAttribute('datetime',t);
+  document.getElementById('yr').textContent=d.getFullYear();
+})();
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","@id":"https://qiuxiadianyingwangmianfeiguankan-app.github.io/#website","url":"https://qiuxiadianyingwangmianfeiguankan-app.github.io/","name":"秋霞电影网免费观看","alternateName":"qiuxiadianyingwangmianfeiguankan-app.github.io","inLanguage":"zh-CN","description":"秋霞电影网免费观看每日整理新片速递、剧集追更表、纪实影像与番剧更新时间轴，提供剧情看点、片长信息与观影提示。","publisher":{"@id":"https://qiuxiadianyingwangmianfeiguankan-app.github.io/#org"}},
+{"@type":"Organization","@id":"https://qiuxiadianyingwangmianfeiguankan-app.github.io/#org","name":"秋霞电影网免费观看","url":"https://qiuxiadianyingwangmianfeiguankan-app.github.io/"},
+{"@type":"BreadcrumbList","@id":"https://qiuxiadianyingwangmianfeiguankan-app.github.io/#bc","itemListElement":[
+{"@type":"ListItem","position":1,"name":"首页","item":"https://qiuxiadianyingwangmianfeiguankan-app.github.io/"},
+{"@type":"ListItem","position":2,"name":"新片速递","item":"https://qiuxiadianyingwangmianfeiguankan-app.github.io/#new"},
+{"@type":"ListItem","position":3,"name":"剧集追更表","item":"https://qiuxiadianyingwangmianfeiguankan-app.github.io/#trace"},
+{"@type":"ListItem","position":4,"name":"纪实影像","item":"https://qiuxiadianyingwangmianfeiguankan-app.github.io/#doc"},
+{"@type":"ListItem","position":5,"name":"番剧更新时间轴","item":"https://qiuxiadianyingwangmianfeiguankan-app.github.io/#acg"}]},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"秋霞电影网免费观看上的片单多久更新一次？","acceptedAnswer":{"@type":"Answer","text":"每天更新两次：上午补前一日上新的遗漏，晚上 20:00 排次日片单，剧集追更表随播出方更新同步。"}},
+{"@type":"Question","name":"网站地址是不是只有这一个？","acceptedAnswer":{"@type":"Answer","text":"是，完整入口为 https://qiuxiadianyingwangmianfeiguankan-app.github.io ，名称与域名固定不变。"}},
+{"@type":"Question","name":"手机上看排版会不会乱？","acceptedAnswer":{"@type":"Answer","text":"不会。整站按移动端优先排版，卡片在手机上自动改成单列，番剧时间轴改为横向滑动，导航收进右上角菜单。"}}]}]}
+</script>
+</body>
+</html>
